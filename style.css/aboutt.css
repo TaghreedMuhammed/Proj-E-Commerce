@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    margin-top: -5px;
+}
+nav ul{
+    list-style-type:none ;
+    padding: 0;
+    float: right;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+   padding: 0px 10px ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+}
+a:hover{
+color: #f0e0b9;
+text-decoration: wavy;
+font-size: 1.2em;
+transition: font-size 0.3s;
+}
+header {
+    background-color: #186F65;
+    padding: 20px;
+}
+.foot {
+    background-color: #186F65;
+    text-align: center;
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    
+}
+.iconz{
+    color: #fff;
+    margin-left: -150px;
+    margin-top: -25px;
+    cursor: pointer;
+    size: 5cm;
+    
+
+}
+
+#follow{
+    color: white;
+   margin-top: -50px;
+   margin-left: -55px;
+}
+
+#bb {
+    color: white;
+    margin-top: -50px;
+    margin-left: 500px;
+    
+   
+}
+.brandName{
+    color: white;
+   margin-top: -30px;
+   margin-left: -80px;
+}

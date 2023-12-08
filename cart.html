@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css/cart.css" />
+    <link rel="stylesheet" href="/style.css/all.min.css" />
+    <link rel="stylesheet" href="/style.css/normalize.css" />
+    <style>
+      #cartContainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #cartContainer img {
+        width: 200px;
+        height: 100px;
+        margin: 10px; 
+        flex-basis: calc(
+          25% - 20px
+        );
+        box-sizing: border-box; 
+      }
+
+      #cartContainer h4 {
+        margin-left: 100px;
+      }
+      #cartContainer p {
+        margin-left: 100px;
+      }
+      #cartContainer button {
+        margin-left: 100px;
+      }
+      #totalPrice {
+        margin-left: 10px;
+      }
+      div p {
+        margin-left: 200px;
+      }
+      #p {
+        border: 5px solid;
+      }
+      .remove {
+        margin-left: 280px;
+        cursor: pointer;
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      #totalPrice {
+        font-weight: bold;
+        color: darkred;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+        <h3 style="color: beige">SneakPeek Shoes</h3>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <h1>Shopping Cart</h1>
+    <div id="cartContainer"></div>
+    <div id="p">
+      <p>Total Price: <span id="totalPrice"></span></p>
+    </div>
+
+    <script src="./js/cart.js"></script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let storedCartItems = localStorage.getItem("cartItems");
+
+      if (storedCartItems) {
+        let parsedCartItems = JSON.parse(storedCartItems);
+
+        let cartContainer = document.getElementById("cartContainer");
+
+        parsedCartItems.forEach((item, index) => {
+          let cartItemElement = document.createElement("div");
+          cartItemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.description}">
+                    <p>${item.description}</p>
+                    <p>${item.price}</p>
+                    <span class="remove" onclick="removeCartItem(${index})"><i class="fa-solid fa-trash-can"></i></span>
+                `;
+          cartContainer.appendChild(cartItemElement);
+        });
+      }
+
+      updateCartTotal();
+    });
+    function removeCartItem(index) {
+      cartItems.splice(index, 1);
+      saveCartToLocalStorage();
+      displayCartItems();
+      updateCartIcon();
+      updateCartTotal();
+    }
+  </script>
+  <footer class="foot">
+    <p id="follow">You Can Follow Us At:</p>
+    <div class="iconz">
+      <a><i class="fa-brands fa-facebook"></i>FaceBook</a>
+      <br />
+      <br />
+      <br />
+      <a><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+      <br />
+      <br />
+      <br />
+      <a><i class="fa-brands fa-instagram"></i>Instagram</a>
+    </div>
+    <p id="bb">Brands We Sell:</p>
+    <div class="brandName">
+      <p>Nike</p>
+      <br />
+      <br />
+      <p>Adidas</p>
+      <br />
+      <br />
+      <p>Converse</p>
+    </div>
+  </footer>
+</html>

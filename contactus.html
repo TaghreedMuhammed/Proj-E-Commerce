@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css/contact.css">
+    <link rel="stylesheet" href="/style.css/all.min.css">
+    <link rel="stylesheet" href="/style.css/normalize.css">
+</head>
+<header>
+    <div class="nav">
+    <nav>
+        <ul>
+       <li><a href="home.html">Home</a></li> 
+      <li> <a href="about.html">About</a></li> 
+     <li><a href="contactus.html">Contact Us</a></li> 
+     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>  
+       </ul>
+       <h3 style="color:beige">SneakPeek Shoes</h3>
+    </nav>
+</div>
+</header>
+<body>
+    <fieldset> 
+        <legend>Get in Touch With Us</legend>
+        <br> 
+   <form id="form" onsubmit="contactUs(event)">
+    <label for="name">User Name</label>
+    <br>
+    <input type="text" id="name">
+    <br>
+    <span id="n" style="color:red">Please Enter a Valid Name</span>
+    <br> <br>
+    <label for="em">Email</label>
+    <br>
+    <input type="text" id="em">
+    <br>
+    <span id="email" style="color:red">Please Enter a Valid Email</span>
+    <br> <br>
+    <label for="ph">Phone</label>
+    <br>
+    <input type="text" id="ph">
+    <br>
+    <span id="pho" style="color:red">Please Enter a valid phone number </span>
+    <br> <br>
+    <input type="submit" value="Contact Us" id="but">
+   </form>
+</fieldset>
+    <br> <br>
+    <script src="./js/contact.js"></script>
+</body>
+<footer class="foot">
+    <p id="follow">You Can Follow Us At:</p>
+    <div class="iconz">
+       <a><i class="fa-brands fa-facebook"></i>FaceBook</a>
+       <br> <br> <br>
+       <a><i class="fa-brands fa-whatsapp"></i>WhatsApp</a> 
+        <br> <br> <br>
+        <a><i class="fa-brands fa-instagram"></i>Instagram</a> 
+    </div>
+    <p id="bb">Brands We Sell:</p>
+    <div class="brandName">
+<p>Nike</p>
+<br> <br>
+<p>Adidas</p>
+<br> <br>
+<p>Converse</p>
+    </div>
+</footer>
+</html>

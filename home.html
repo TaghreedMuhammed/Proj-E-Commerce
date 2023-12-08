@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css/homee.css">
+    <link rel="stylesheet" href="/style.css/all.min.css">
+    <link rel="stylesheet" href="/style.css/normalize.css">
+</head>
+    <header>
+    <div class="nav">
+    <nav>
+        <ul>
+       <li><a href="home.html">Home</a></li> 
+      <li> <a href="about.html">About</a></li> 
+     <li><a href="contactus.html">Contact Us</a></li> 
+     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>  
+       </ul>
+       <h3 style="color:beige">SneakPeek Shoes</h3>
+    </nav>
+</div>
+</header>
+<body>
+<div id="container">
+<div class="slides" >
+    <img src="./images/adidasbox.jpg"  width="450px" height="350px" >
+</div>
+<div class="slides" >
+    <img src="./images/adibox.jpg" width="450px" height="350px" >
+</div>
+<div class="slides" >
+<img src="./images/starssvat.jpg" width="450px" height="350px" >
+</div>
+<div class="slides" >
+    <img src="./images/nikeboxx.jpg" width="450px" height="350px" >
+</div>
+<div class="slides" >
+    <img src="./images/nikebox.jpg" width="450px" height="350px" >
+</div>
+<button class="next" onclick="plusSlide(1)">
+    <i class="fa-solid fa-chevron-right"></i>
+</button>
+<button class="previous" onclick="plusSlide(-1)">
+    <i class="fa-solid fa-chevron-left"></i>
+</button>
+<div class="text">
+    <h1 id="address">Welcome</h1>
+    <p id="para">To SneakPeek Shoes <br> <br> – where style meets comfort! <br> Discover a curated collection of trendy footwear for every occasion.<br> Step into a world of fashion-forward choices that not only elevate your look but also keep you comfortably on the move.<br> Find your perfect pair and step into a world of endless possibilities with SneakPeek Shoes."</p>
+</div>
+</div>
+
+
+<div class="catcontainer">
+    <p id="text">Click to choose Your Favorite Brand!</p>
+    <br>
+    <button class="brands" onclick="filterBrands('All')">All</button>
+   <button class="brands" onclick="filterBrands('Nike')">Nike</button>
+ <button class="brands" onclick="filterBrands('Adidas')">Adidas</button>
+ <button class="brands" onclick="filterBrands('Converse')">Converse</button>
+</div>
+<div id="shoeCont">
+<div class="shoes" data-brand="Adidas" data-index="0">
+    <img src="./images/adidasmen3.jpg" width="200px">
+    <h4>Adidas Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>2500LE</i></p>
+    <button class="add" onclick="addToCart(0)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Adidas" data-index="1">
+    <img src="./images/adidaswomen.jpg" width="200px"  >
+    <h4>Adidas Women</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1500LE</i></p>
+    <button class="add" onclick="addToCart(1)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Adidas" data-index="2">
+    <img src="./images/adidaswomen1.jpg" width="200px"  >
+    <h4>Adidas Women</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1500LE</i></p>
+    <button class="add" onclick="addToCart(2)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Adidas" data-index="3">
+    <img src="./images/adidasblackk.jpg" width="200px"  >
+    <h4>Adidas Black</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+    <button class="add" onclick="addToCart(3)">Add to Cart</button>
+</div>
+<br>
+<div class="shoes" data-brand="Converse" data-index="4">
+    <img src="./images/convwomen.jpg" width="200px"  >
+    <h4>Converse Women White</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+    <button class="add" onclick="addToCart(4)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Converse" data-index="5">
+    <img src="./images/convmenred.jpg" width="200px" >
+    <h4>Converse Men Red</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+    <button class="add" onclick="addToCart(5)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Converse" data-index="6">
+    <img src="./images/convmenyellow.jpg" width="200px"  >
+    <h4>Converse Men Yelow</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(6)">Add to Cart</button>
+</div>
+
+<div class="shoes" data-brand="Converse" data-index="7">
+    <img src="./images/convwomen2.jpg" width="200px"  >
+    <h4>Converse Women Black</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(7)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="8">
+    <img src="./images/nikemen1.jpg" width="200px"  >
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(8)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="9">
+    <img src="./images/nikemen4.jpg" width="200px"  >
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(9)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="10">
+    <img src="./images/nikemen5.jpg" width="200px"  >
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(10)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="11">
+    <img src="./images/nikewomen2.jpg" width="200px"  >
+    <h4>Nike Women</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(11)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="12">
+    <img src="./images/nikemen8.jpg" width="200px" style="padding:15px;" >
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(12)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="13">
+    <img src="./images/nikemen6.jpg" width="200px" style="padding:15px;">
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(13)">Add to Cart</button>
+</div>
+<div class="shoes" data-brand="Nike" data-index="14">
+    <img src="./images/nikewomen3.jpg" width="200px" style="padding:15px;">
+    <h4>Nike Men</h4>
+    <p class="description">Sport Shoes</p>
+    <p> <i>1800LE</i></p>
+     <button class="add" onclick="addToCart(14)">Add to Cart</button>
+</div>
+</div>
+<div id="top">
+    <a href="home.html"><i class="fa-solid fa-arrow-up"></i></i></a>
+</div>
+
+<script src="./js/cart.js"></script>
+<script src="./js/hom.js"></script>
+</body>
+<footer class="foot">
+    <p id="follow">You Can Follow Us At:</p>
+    <div class="iconz">
+       <a><i class="fa-brands fa-facebook"></i>FaceBook</a>
+       <br> <br> <br>
+       <a><i class="fa-brands fa-whatsapp"></i>WhatsApp</a> 
+        <br> <br> <br>
+        <a><i class="fa-brands fa-instagram"></i>Instagram</a> 
+    </div>
+    <p id="bb">Brands We Sell:</p>
+    <div class="brandName">
+<p>Nike</p>
+<br> <br>
+<p>Adidas</p>
+<br> <br>
+<p>Converse</p>
+    </div>
+</footer>
+</html>

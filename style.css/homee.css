@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    margin-top: -5px;
+}
+nav ul{
+    list-style-type:none ;
+    padding: 0;
+    float: right;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+   padding: 0px 10px ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+}
+a:hover{
+color: #f0e0b9;
+text-decoration: wavy;
+font-size: 1.2em;
+transition: font-size 0.3s;
+}
+header {
+    background-color: #186F65;
+    padding: 20px;
+}
+.slides{
+    background-color:#f0e0b9;
+    padding: 20px;
+    display: inline-block;
+
+}
+.next{
+    float: right;
+    margin-right: 860px;
+    margin-top: -200px;
+    
+}
+
+.previous {
+ float: left;
+ margin-left: 1px;
+ margin-top: -200px;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #B2533E;
+}
+
+.container {
+    position: relative;
+
+}
+#address {
+    margin-top: -200px;
+    margin-left: -150px;
+}
+#para{
+    margin-left: -130px;
+}
+.catcontainer{
+    padding:10px;
+}
+#cat1{
+    padding:2px;
+}
+#cat2{
+    padding: 2px 10px ;
+}
+label{
+    margin-left: 30px;
+}
+
+.add{
+    cursor:pointer;
+   background-color: #f0e0b9;
+   border-radius:10px;
+   padding: 5px;
+   margin: 7px;
+}
+.shoes {
+    border:1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin:20px;
+    width: 250px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.5);
+    display: inline-block;
+   
+}
+#top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 1;
+}
+#shoeCont {
+    margin: 0 auto;
+    text-align: center;
+}
+#text{
+    padding: 5px;
+    color: #B2533E;
+}
+.brands{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f0e0b9;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+  
+}
+.foot {
+    background-color: #186F65;
+    text-align: center;
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    
+}
+.iconz{
+    color: #fff;
+    margin-left: -150px;
+    margin-top: -25px;
+    cursor: pointer;
+    size: 5cm;
+    
+
+}
+
+#follow{
+    color: white;
+   margin-top: -50px;
+   margin-left: -55px;
+}
+
+#bb {
+    color: white;
+    margin-top: -50px;
+    margin-left: 500px;
+   
+}
+.brandName{
+    color: white;
+   margin-top: -30px;
+   margin-left: -80px;
+}
